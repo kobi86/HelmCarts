@@ -2,12 +2,14 @@
 
 #### <b> Note: There are two Helm charts in this project that can be used independently </b>
 #### <b> Note: The Helm is installed has a DaemonSet </b>
-<br>
+#### <b> Note: If your Using the internal LB , make sure to create the LB before deployment and set the given IP in the <u>ingress-config-internal.yaml </u>lb section</b>
 
+<br>
 ## <u>Installation</u><br>
 #### <u>In order to install External Controller on K8S in cloud environment:</u>
 1. Create namespace to deploy the helm <br>
 2. helm install ingress-nginx-external ingress-nginx-external/ -n {namespace} <br>
+
 
 #### <u>In order to install Internal Controller on K8S:</u>
 1. Create namespace to deploy the helm <br>
